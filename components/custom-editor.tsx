@@ -26,7 +26,11 @@ const editorConfiguration = {
   ]
 };
 
-function CustomEditor(props: any) {
+type Props = {
+  initialData: string;
+};
+
+function CustomEditor(props: Props) {
   return (
     <CKEditor
       editor={Editor}
